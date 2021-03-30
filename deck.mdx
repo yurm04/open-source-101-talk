@@ -1,0 +1,665 @@
+import { Head, Notes, Image } from 'mdx-deck'
+
+import './styles.css'
+
+import customTheme from './theme'
+export const theme = customTheme;
+
+import { layouts, themes } from './constants'
+
+import Layout from './components/Layout'
+import List from './components/List'
+import FullImage from './components/FullImage'
+
+import chronicler from './assets/chronicler.png'
+import chroniclerGithub from './assets/chroniclerGithub.png'
+import google from './assets/google.png'
+import chroniclerDate from './assets/chroniclerDate.png'
+import sinatra from './assets/sinatra.png'
+import codeCovenant from './assets/codeCovenant.png'
+import openSource101CC from './assets/openSource101CC.png'
+
+import catTyping from './assets/catTyping.gif'
+
+<Head>
+  <title>How to take your open source project from good to great</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+  </style>
+</Head>
+
+
+<!-- ****************** -->
+<!-- START PRESENTATION -->
+<!-- ****************** -->
+
+<Layout showWebsite={true} theme="light" layout={layouts.bigHello}>
+
+# Hello 👋
+
+</Layout>
+
+
+<Notes>
+
+- some intro!
+
+</Notes>
+
+---
+
+<Layout showWebsite={true} layout="introLayout">
+
+# Yuraima Estevez
+## Engineering Manager @ The New York Times
+
+</Layout>
+
+<Notes>
+
+- website to see the slides
+- hit me up on twitter
+
+</Notes>
+
+
+---
+
+
+<FullImage src={chroniclerGithub} />
+
+<Notes>
+
+- A  few years ago, I built a tool called Chronicler that I wanted to open source.
+- Like many of you here today, I had no idea what I was doing when it came to publishing my own open source project on my own.
+
+</Notes>
+
+
+---
+
+
+<FullImage src={chroniclerGithub} />
+
+<Notes>
+
+- Yes, I had used plenty of open source projects at that point in my career. But I had never been the one to bear my heart and soul on the internet, and publicly put my work out there.
+- so, I did what anyone would have done…
+
+</Notes>
+
+
+---
+
+
+<FullImage src={google} />
+
+<Notes>
+
+- ...I googled my way out of it. And I put together a lot of disparate pieces for how I could successfully put my project out into the world.
+- And after I finally got it all together and pushed it all up to GitHub...
+
+</Notes>
+
+
+---
+
+
+<FullImage src={catTyping} />
+
+<Notes>
+
+- ...I decided to write about my experience open sourcing my first project.
+
+</Notes>
+
+
+---
+
+
+<FullImage src={chronicler} />
+
+<Notes>
+
+- And I came out with my blog post titled  `how to take your open source project from good to great.
+- It was a beginner’s guide for how you could create a great open source project. All based on my research, conversations with colleagues and friends, and my experience at the time.
+
+</Notes>
+
+
+---
+
+
+<img src={chroniclerDate} />
+
+<Notes>
+
+- that was published back in 2019, and looking back on it now on march 30, 2021 that was approximately 1000 years ago.
+- And truthfully a lot of what I wrote in that post still holds up, so I encourage you to go read it.
+- The general take away of my blog post is that there are a lot of ways that you can take your open source project from good to great. I wrote about a few that I thought were important, and today I’m sure you’ll learn plenty more of them in other sessions later on.
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.dark}>
+
+## Today
+
+</Layout>
+
+<Notes>
+
+- But today I want to focus on something that was missing from that blog post I wrote. Something that I’ve been learning more and more of over these last few years of my career, that I somehow always come back to as one of the most important aspects of the work that I do.
+- one of the most impactful ways you can take your open source projects from good to great...
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Community
+
+</Layout>
+
+<Notes>
+
+- ...is to focus on community
+-  Community is the heart of open source. 
+- It’s what drives us to volunteer our time and energy to projects that can be used by thousands more. 
+- It prompts us to become better teachers, and enables us always to constantly learn new things. 
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Community
+
+</Layout>
+
+<Notes>
+
+- it's what brings us all here together today...
+- Without a strong sense of community, there would be no Open Source 101 conference. 
+- Without the thousands of communities out there today, there would be no open source at all.
+- Just like I said in my original blog post, there are a lot of ways you can focus on community while you’re open sourcing your work
+- Today, I’m going to focus on just a few quick, tactical tips I’ve picked up along the way.
+
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Be Welcoming
+
+</Layout>
+
+<Notes>
+
+- first impressions can be long-lasting, so do all you can to make folks feel welcome when they first discover your project.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `README.md`
+
+</Layout>
+
+<Notes>
+
+- One of the best places to do this might be your `README.md` file.
+- it's the first page you're users will see, and usually houses a ton on important information.
+- So addressing your users and contributors in your `README.md` file is a small step that goes a long way in creating a sense of belonging. 
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `README.md`
+
+</Layout>
+
+<Notes>
+
+- you can add your motivation for the projectin your README, describe who it serves, and any values or principles that help guide you as you work.
+- this can give your community something to come together on, and helps motivate everyone to make progress together.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `README.md`
+
+</Layout>
+
+<Notes>
+
+- Your readme is also a great place to show gratitude.
+- You can thank newcomers for coming to visit in the first place, and show some love to the different contributors that help make your project everything that it is. 
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `all-contributors`
+
+</Layout>
+
+<Notes>
+
+-  the `all-contributors` spec and supporting tools makes it super easy to celebrate all kinds of contributors for their help, beyond just engineering support.
+- it includes recognition for documentation writing, bug filing, translation, design help, and lots of other contribution types.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `AUTHORS.md`
+
+</Layout>
+
+<Notes>
+
+- Or, you could add and authors.md file to your project.
+
+
+</Notes>
+
+
+---
+
+
+<FullImage src={sinatra} />
+
+<Notes>
+
+- The open source project Sinatra has a great example of this in their `AUTHORS.md` file
+- they personally and specifically thank many of of the project's main contributors.
+
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Be Inclusive
+
+</Layout>
+
+<Notes>
+
+- For your open source project to have a great community, you must also be Inclusive
+- emphasize the importance of kindness and multual respect in all aspects of what community members do. And again, put that in your README.md or somewhere equally prominent.
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Code Review
+
+</Layout>
+
+<Notes>
+
+- Be specific about how best to give feedback in Code Review or how to keep discussions cordial and productive.
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
+
+# Build a healthy culture
+
+</Layout>
+
+<Notes>
+
+- and try to be as intentional and thoughtful about the culture you're trying to build.
+- good culture doesn't happen by accident. You need to cultivate it and nurture it into what you all want it to be.
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Code of Conduct
+
+</Layout>
+
+<Notes>
+
+- a code of conduct helps to reinforce that culture.
+- and is one small part of creating a space that is safe and welcoming for all people
+- will make it very clear what kind of behavior is not tolerated when participating in your community
+ 
+
+</Notes>
+
+
+---
+
+
+<FullImage src={codeCovenant} />
+
+<Notes>
+
+- The contributor covenant is a well-respected and frequently adopted code of conduct that you can make your own.
+ 
+
+</Notes>
+
+
+---
+
+
+<FullImage src={openSource101CC} />
+
+<Notes>
+
+- Or you can pull inspiration from existing organizations and their code of conduct, like the one Open Source 101 has.
+ 
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Celebrate the people
+
+</Layout>
+
+<Notes>
+
+- Recognize and celbrate the fact that your community is made up of people from all walks of life. 
+- different backgrounds, experience levels, race, ethnicities, religions, and nationalities. All coming together to work on a project that means something to you all, and binds you all together.
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Welcome and amplify different voices
+
+</Layout>
+
+<Notes>
+
+- Having a diverse community doesn't come for free or by accident.
+- And its no secret that the tech and open source fields have been particularly toxic for folks belonging to minority and marginalized groups.
+- Put the work in to make your community one that is safe and welcoming for everyone, especially those that have been historically left out.
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Diversity and Inclusion
+
+</Layout>
+
+<Notes>
+
+- I want to add a quick note here because I think it's so important to get this point accross.
+- diversity and inclusion in open source communities is a huge topic in and of itself, one that demands and deserves thoughtful and intentional effort.
+- I add it here quickly, not to mislead you into thinking it is a quick tip to add to your check list, but to underscore the importance of it and urge you to give it the time and focus it needs.
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Help others learn
+
+</Layout>
+
+<Notes>
+
+- No matter what your experience level, brand new to programming or years of experience under your belt...
+- everyone is going to need a little extra help at some point.
+- Optimize how your users and contributors can get up and running, and feeling confident 
+
+</Notes>
+
+
+---
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Encourage discussion
+
+</Layout>
+
+<Notes>
+
+- Set up channels of communication where people can come together to ask questions and learn from each other
+
+
+
+</Notes>
+
+
+---
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Slack, Discord, and IRC
+
+</Layout>
+
+<Notes>
+
+- Slack discord and IRC channels are perfect for these kinds of asynchronous conversations.
+
+
+</Notes>
+
+
+---
+
+<Layout showWebsite={true} layout="introLayout">
+
+## "IRL" conversations
+
+</Layout>
+
+<Notes>
+
+- Also consider video or conference calls to bring community members together.
+- These can be open office hours to ask questions, meetups to learn new topics, or just time to discuss the future of the project together.
+- It's an incredibly personal experience that helps build a human connection to your project and goes way beyond the code.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Help Others Contribute
+
+</Layout>
+
+<Notes>
+
+- Make it super easy for folks to participate in your community, and encourage them to do so!
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## `CONTRIBUTING.md`
+
+</Layout>
+
+<Notes>
+
+- Make sure you have a contributing doc to tell folks how they can get started, where they can jump in, and how they can reach out for help.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Mentorship
+
+</Layout>
+
+<Notes>
+
+- again, a personal touch can go a long way.
+- pairing closely with contributors and help them fix bugs or take on bigger projects can help build up a lot of confidence in a short amount of time.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## Invite new maintainers
+
+</Layout>
+
+<Notes>
+
+- Lastly, it takes a village to keep up a great open source project, especially one with a vibrant community.
+- Find ways to bring more people into the fold.
+- This could be by inviting frequent contributors to join you as maintainers and mentoring them to take on more and more responsibilities.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## How to take your open source project from good to great
+
+</Layout>
+
+<Notes>
+
+- As I said at the top of this talk, there are a ton of ways to take your open source project from good to great.
+- Focusing on community is just one of them, but I think it's one of the most important and valuable ones that you can spend your time on.
+
+
+</Notes>
+
+
+---
+
+
+<Layout showWebsite={true} layout="introLayout">
+
+## How to take your open source project from good to great
+
+</Layout>
+
+<Notes>
+
+- Building a community comes in many forms.
+- Ultimately, it comes down to keeping people at the center of your work.
+- Whether you're writing documentation, hosting meetups, building up processes around code review, or setting up continuous integration pipelines: think about how best to serve the people in your community.
+- and you'll almost certainly take your open source project from good to great.
+
+
+</Notes>
+
+
+---
+
+<!-- **************** -->
+<!-- END PRESENTATION -->
+<!-- **************** -->
+
+<Layout layout={layouts.bigHello} theme={themes.light} showWebsite={true}>
+
+# Thank You!
+
+</Layout>
+
+<Notes>
+
+- thank you for coming, to open source 101 organizers for everything they've done to put this together.
+- feel free to ask questions in the Q+A feature, or reach out on twitter @yurm04 if you have any questions. I'm around to answer questions or just hangout and chat!
+
+</Notes>

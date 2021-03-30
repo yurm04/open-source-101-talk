@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "test": "echo \"there are no tests\""
+  },
+  "devDependencies": {
+    "classnames": "^2.2.6",
+    "code-surfer": "3.1.0",
+    "mdx-deck": "3.0.13",
+    "website-pdf": "^4.1.0"
+  },
+  "name": "open-source-101-talk"
+}
