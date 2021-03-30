@@ -20,6 +20,7 @@ import codeCovenant from './assets/codeCovenant.png'
 import openSource101CC from './assets/openSource101CC.png'
 import allContributors from './assets/allContributors.png'
 import firstIssue from './assets/firstIssue.png'
+import chroniclerMeetup from './assets/chroniclerMeetup.jpeg'
 
 import catTyping from './assets/catTyping.gif'
 
@@ -51,7 +52,7 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 # Yuraima Estevez
 ## Engineering Manager @ The New York Times
@@ -203,7 +204,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.sectionTitle}>
 
 <List>
   <li>Be Welcoming</li>
@@ -243,7 +244,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## `README.md`
 
@@ -262,7 +263,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## `README.md`
 
@@ -280,7 +281,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## `README.md`
 
@@ -311,7 +312,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## `AUTHORS.md`
 
@@ -334,6 +335,7 @@ import catTyping from './assets/catTyping.gif'
 
 - The open source project Sinatra has a great example of this in their `AUTHORS.md` file
 - they personally and specifically thank many of of the project's main contributors.
+- if your project is small enough, you can definitely find ways to personally thank contributors. But even as it grows, don't forget to give thanks to the folks that help keep your project and community going.
 
 
 </Notes>
@@ -342,7 +344,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.sectionTitle}>
 
 <List appear={false}>
   <li style={{fontWeight: 'bold'}}>Be Welcoming</li>
@@ -383,9 +385,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.introLayout} theme={themes.dark}>
 
-# Code Review
+## Code Review
 
 </Layout>
 
@@ -399,9 +401,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.introLayout} theme={themes.dark}>
 
-# Build a healthy culture
+## Build a healthy culture
 
 </Layout>
 
@@ -416,7 +418,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Code of Conduct
 
@@ -461,7 +463,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Celebrate the people
 
@@ -470,6 +472,7 @@ import catTyping from './assets/catTyping.gif'
 <Notes>
 
 - Recognize and celbrate the fact that your community is made up of people from all walks of life. 
+- it's better for it, it's stronger for it.
 - different backgrounds, experience levels, race, ethnicities, religions, and nationalities. All coming together to work on a project that means something to you all, and binds you all together.
 
 </Notes>
@@ -478,7 +481,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Welcome and amplify different voices
 
@@ -496,7 +499,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Diversity and Inclusion
 
@@ -514,7 +517,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.sectionTitle}>
 
 <List appear={false}>
   <li>Be Welcoming</li>
@@ -537,9 +540,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout layout={layouts.sectionTitle} theme={themes.light}>
 
-## Help others learn
+# Help others learn
 
 </Layout>
 
@@ -554,7 +557,7 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Docs, docs, docs
 
@@ -573,7 +576,7 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Encourage discussion
 
@@ -590,7 +593,7 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Slack, Discord, and IRC
 
@@ -606,7 +609,7 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## "IRL" conversations
 
@@ -616,7 +619,7 @@ import catTyping from './assets/catTyping.gif'
 
 - Also consider video or conference calls to bring community members together.
 - These can be open office hours to ask questions, meetups to learn new topics, or just time to discuss the future of the project together.
-- It's an incredibly personal experience that helps build a human connection to your project and goes way beyond the code.
+
 
 
 </Notes>
@@ -624,8 +627,21 @@ import catTyping from './assets/catTyping.gif'
 
 ---
 
+<img src={chroniclerMeetup} />
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Notes>
+
+- this is me back in 2018 when I first published chronicler, speaking at a meetup that NYT.
+- I shared my chronicler with the group, explained how they could help by contributing code to the project, and encouraged them to reach out online or in person if they needed any help at all.
+- Taking a personal approach helps build a human connection to your project and goes way beyond the code.
+
+</Notes>
+
+
+---
+
+
+<Layout layout={layouts.sectionTitle}>
 
 <List appear={false}>
   <li>Be Welcoming</li>
@@ -648,9 +664,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.sectionTitle} theme={themes.light}>
 
-## Help Others Contribute
+# Help Others Contribute
 
 </Layout>
 
@@ -666,7 +682,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## `CONTRIBUTING.md`
 
@@ -683,7 +699,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Good first issue
 
@@ -692,6 +708,7 @@ import catTyping from './assets/catTyping.gif'
 <Notes>
 
 - It can be intimidating for a newcomer to land on a project their excited to participate in and have no idea where to start.
+- Make a habit of labeling different issues based on how difficult they might be to tackle, and make it especially clear when a task would be suited best for beginners.
 
 </Notes>
 
@@ -703,7 +720,6 @@ import catTyping from './assets/catTyping.gif'
 
 <Notes>
 
-- Make a habit of labeling different issues based on how difficult they might be to tackle, and make it especially clear when a task would be suited best for beginners.
 - you'll see here that the react codebase has a label for all open issues that are approachable enough for beginners to take on.
 - this encourages new contributors to submit their own work and helps to grow your community ranks
 
@@ -713,7 +729,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Mentorship
 
@@ -731,7 +747,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout showWebsite={true} layout={layouts.introLayout}>
 
 ## Invite new maintainers
 
@@ -750,7 +766,7 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout layout={layouts.sectionTitle} theme={themes.light}>
+<Layout layout={layouts.sectionTitle}>
 
 <List appear={false}>
   <li>Be Welcoming</li>
@@ -773,9 +789,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout layout={layouts.sectionTitle}>
 
-## How to take your open source project from good to great
+<h1 style={{textAlign: 'left'}}>How to take your Open Source Project from Good to Great</h1>
 
 </Layout>
 
@@ -791,9 +807,9 @@ import catTyping from './assets/catTyping.gif'
 ---
 
 
-<Layout showWebsite={true} layout="introLayout">
+<Layout layout={layouts.sectionTitle}>
 
-## How to take your open source project from good to great
+<h1 style={{textAlign: 'left'}}>How to take your Open Source Project from Good to Great</h1>
 
 </Layout>
 
